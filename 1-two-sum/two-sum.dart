@@ -7,10 +7,10 @@ class Solution {
         if(prevMap.containsKey(value)){
             return [i,prevMap[value]!];
         }
-        else{
+      
             prevMap[nums[i]] = i;
-        }
+        
     }
-    return [0,0];
+    return [];
   }
 }
