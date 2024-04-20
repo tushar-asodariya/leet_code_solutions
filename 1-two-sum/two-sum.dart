@@ -11,6 +11,6 @@ class Solution {
             prevMap[nums[i]] = i;
         }
     }
-    return [];
+    return [0,0];
   }
 }
