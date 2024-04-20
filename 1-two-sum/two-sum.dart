@@ -6,10 +6,10 @@ class Solution {
         int value = target - nums[i];
         if(prevMap.containsKey(value)){
             return [i,prevMap[value]!];
-        }
+        }else{
       
             prevMap[nums[i]] = i;
-        
+        }
     }
     return [];
   }
