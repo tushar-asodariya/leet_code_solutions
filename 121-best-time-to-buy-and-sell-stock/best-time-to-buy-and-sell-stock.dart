@@ -10,7 +10,7 @@ class Solution {
 
    while(r < prices.length){
     if(prices[r] < prices[l]){
-        l++;
+        l=r;
         r=l+1;
     }else{
         int currentProfit = prices[r]-prices[l];
