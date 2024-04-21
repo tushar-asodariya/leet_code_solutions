@@ -6,8 +6,8 @@ class Solution {
     }
     int l = 0, r = 0;
 
-   while(r < prices.length){
-    if(prices[r] < prices[l]){
+    for(;r<prices.length;){
+if(prices[r] < prices[l]){
         l++;
         r=l+1;
     }else{
@@ -18,7 +18,11 @@ class Solution {
             r++;
 
     }
-   }
+    }
+
+//    while(r < prices.length){
+    
+//    }
     return maxProfit;
   }
 }
