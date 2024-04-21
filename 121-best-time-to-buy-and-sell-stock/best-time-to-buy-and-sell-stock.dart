@@ -1,25 +1,24 @@
 class Solution {
   int maxProfit(List<int> prices) {
     int maxProfit = 0;
-    if(prices.length<=1){
-        return maxProfit;
-    }
-    int l = 0, r = 0;
+ 
+    int l = 0, r = 1;
 
    
 
    while(r < prices.length){
     if(prices[r] < prices[l]){
         l=r;
-        r=l+1;
+       
     }else{
         int currentProfit = prices[r]-prices[l];
         if(currentProfit>maxProfit){
             maxProfit = currentProfit;
         }
-            r++;
+          
 
     }
+      r++;
    }
     return maxProfit;
   }
