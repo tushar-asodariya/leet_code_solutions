@@ -1,18 +1,16 @@
 class Solution {
   bool containsDuplicate(List<int> nums) {
     Set<int> numSet = {};
-    bool isDuplicate = false;
 
     for(var x in nums){
  if(numSet.contains(x)){
-            isDuplicate= true;
-            break;
+            return true;
         }
         numSet.add(x);
     }
    
 
-    return isDuplicate;
+    return false;
 
   }
 }
