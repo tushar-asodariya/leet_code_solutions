@@ -4,7 +4,7 @@
  * @return {number[]}
  */
 var shuffle = function(nums, n) {
-    var shuffledList = [];
+    let shuffledList = [];
     for(let i =0; i<n; i++){
         shuffledList.push(nums[i])
         shuffledList.push(nums[i+n])
