@@ -5,10 +5,9 @@
  */
 var shuffle = function(nums, n) {
     var shuffledList = [];
-    let j =n
-    for(let i =0; j<nums.length; j++){
-        shuffledList.push(nums[i++])
-        shuffledList.push(nums[j])
+    for(let i =0; i<n; i++){
+        shuffledList.push(nums[i])
+        shuffledList.push(nums[i+n])
 
     }
 return shuffledList;
